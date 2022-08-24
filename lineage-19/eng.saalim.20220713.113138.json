@@ -1,13 +1,3 @@
 {
-  "response": [
-    {
-      "datetime": 1661355689,
-      "filename": "lineage-19.1-20220824-UNOFFICIAL-lisa.zip",
-      "id": "742f5aebfcfa8de6f38406d9f18674ac",
-      "romtype": "unofficial",
-      "size": 1185538027,
-      "url": "https://github.com/ItsVixano-releases/LineageOS_lisa/releases/download/20220824/lineage-19.1-20220824-UNOFFICIAL-lisa.zip",
-      "version": "19.1"
-    }
-  ]
+  "response": []
 }
