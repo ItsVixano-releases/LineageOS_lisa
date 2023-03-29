@@ -1,0 +1,400 @@
+====================
+     2023-03-29    
+====================
+* build/soong
+8a54c8d Disable clang-tidy [Danny Lin]
+0685841 cleanbuild: Remove obj/{DTB,DTBO,KERNEL}_OBJ on installclean [Jason Edson]
+66f2f5d ui: Pass the exact CPU thread count to -j [Park Ju Hyung]
+674f022 soong: increase heap size for metalava [LeddaZ]
+
+* device/qcom/sepolicy_vndr-legacy-um
+330ea5f kona/lito: Label additional sysfs_wakeup [Michael Bestas]
+
+* device/xiaomi/sm8350-common
+bf42566 sm8350-common: sepolicy: Remove duplicate lahaina wakeup nodes [Bruno Martins]
+60d397f sm8350-common: sepolicy: Label camera libraries as same process hal files [Arian]
+5808058 sm8350-common: Build graphics allocator 3.0 interface to vendor [Arian]
+
+* frameworks/av
+67ef25e SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+b53189b7 Camera: Expose aux camera if packagename is null [wbs306]
+b0ca3eff SystemUI: Add delete action to screen recorder notification [Sourajit Karmakar]
+99e7b8c9 Revert "Update Media Seekbar Thumb Shape" [00day0]
+42323282 core: Remove default aspect ratio limit for old apps [Danny Lin]
+8b37f9b4 Add support for app signature spoofing [Danny Lin]
+49527f3e AuthRippleView: Allow disabling ripple unlock animation using overlay [jhenrique09]
+60efc4ed base: SystemUI: Allow flags to be overrideable [Jeferson]
+5c3319ed Revert "Ignore the charging ripple flag." [Jeferson]
+
+* hardware/interfaces
+132abf6 frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
+
+* lineage/scripts
+5fdd957 emoji-updater: Apply found data to LatinIME [Michael W]
+
+* packages/apps/Eleven
+b6dbaa2 Eleven: Make the square widget a true square [Tim Schumacher]
+
+* packages/apps/Trebuchet
+57ae7b1 Launcher3: power-off -> screen-off [kubersharma001]
+27f8528 Launcher3: Show clear all button in recents overview [jhonboy121]
+b9a94dc Launcher3: Add toggle for DT2S [DennySPB]
+3dfc22d Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
+ed744e2 Add .gitupstream file [Michael Bestas]
+
+* packages/apps/Updater
+f09265e Updater: add support for local updates [Joey]
+
+* packages/modules/Permission
+59d1e5c Utils: add FAKE_PACKAGE_SIGNATURE to platform permissions [Vachounet]
+
+* vendor/extra
+e7cd7b5 extra: build: #WeWantMiuiCamera [Giovanni Ricca]
+
+* vendor/lineage
+e67a031 vars: Update qcom tags [Michael Bestas]
+
+* vendor/qcom/opensource/fm-commonsys
+6962b19 jni: Skip loading FM firmware if requested [Ricardo Cerqueira]
+
+====================
+     2023-03-28    
+====================
+* lineage/hudson
+dd14e35 against all odds, and everyone's wishes, the prodigal son returns [Nolen Johnson]
+
+* lineage/mirror
+5fbea3e Updated aosp-minimal to 27-Mar-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+0a32bf4 devices: Promote G5/V20 families [Nolen Johnson]
+
+* packages/apps/Aperture
+9829b61 Aperture: Ensure output is truncated [Tommy Webb]
+
+* packages/apps/Gallery2
+0745df0 Gallery2: Ensure cropped output is truncated [Tommy Webb]
+
+====================
+     2023-03-27    
+====================
+* device/xiaomi/lisa
+55d33e8 lisa: Do not configure RPC threadpool in camera HAL [Jyotiraditya Panda]
+
+* vendor/extra/external/Camera
+a06c10e version 61 [Daniel Micay]
+
+* vendor/xiaomi/lisa
+73c5182 lisa: Do not configure RPC threadpool in camera HAL [Jyotiraditya Panda]
+
+====================
+     2023-03-26    
+====================
+* hardware/qcom/display
+ac823d9 gralloc: Fix Compilation errors [Vinoth Jayaram]
+
+* kernel/xiaomi/sm8350
+577e15239385 TMP [Giovanni Ricca]
+ab631d4bce82 TMP goodix taoyao-s-oss [Giovanni Ricca]
+2e7ed37683a9 arm64: configs: xiaomi: Enable CFQ group schedule [Rick Yiu]
+c57aaff3e767 arm64: configs: xiaomi: Enable CONFIG_EXFAT_FS [Sandeep Patil]
+1b48a9e0d530 arm64: configs: xiaomi: Enable mmhardware detection for redwood [Giovanni Ricca]
+4a5088299a7b arm64: configs: xiaomi: Enable renoir specific power config [Arian]
+5bc55eda27c2 arm64: configs: xiaomi: Enable mi wireless charging for odin star and venus [Arian]
+d30b4782f0a8 arm64: configs: xiaomi: Enable ultra wideband for odin [Arian]
+3197222dd241 arm64: configs: xiaomi: Enable time of flight sensor for odin and star [Arian]
+338927f6fb4b arm64: configs: xiaomi: Enable image signal processor for cetus [Arian]
+c7bcce1d51f0 arm64: configs: xiaomi: Enable pinctrl configs [Giovanni Ricca]
+a02985706727 arm64: configs: xiaomi: Build aw haptic drivers inline [Giovanni Ricca]
+f451acf90704 arm64: configs: xiaomi: Enable haptics drivers [Giovanni Ricca]
+e992c8be8803 arm64: configs: xiaomi: Enable fingerprint configs [Giovanni Ricca]
+3c3a61eaee6c arm64: configs: xiaomi: Enable MIUS proximity sensor [Giovanni Ricca]
+133964300160 arm64: configs: xiaomi: Enable bq fuel guage [Giovanni Ricca]
+29e6fa1ef561 arm64: configs: xiaomi: Enable bq2597x [Giovanni Ricca]
+7b945124b2af arm64: configs: xiaomi: Build qti charger as a module [Giovanni Ricca]
+697d8a9729e5 arm64: configs: xiaomi: Enable IR configs [Arian]
+9af9a9fb1d4d arm64: configs: xiaomi: Build icnss2 as module [Giovanni Ricca]
+a56e37c8ae91 arm64: configs: xiaomi: Build cnss2 as module [Arian]
+9421d143ed73 arm64: configs: xiaomi: Enable qca6490/qca6750 [Arian]
+847e917875a0 arm64: configs: xiaomi: Enable qcacld [Luca Stefani]
+0c9123dc5677 arm64: configs: xiaomi: Enable mi thermald interface [Giovanni Ricca]
+c084d73c23d9 arm64: configs: xiaomi: Enable mi hwid driver [Arian]
+38cc08423237 arm64: configs: xiaomi: Disable unused touchscreen drivers [Arian]
+5649274039d4 arm64: configs: xiaomi: Enable touchscreen drivers [Giovanni Ricca]
+a999506f436a arm64: configs: xiaomi: Enable CONFIG_BUILD_ARM64_DT_OVERLAY [Demon000]
+8a35816a0c4d arm64: configs: Initial xiaomi stub fragmented configs [Giovanni Ricca]
+3a5d1bcc85b8 arm64: Generate lahaina-qgki_defconfig [Arian]
+74889cdfb70c .gitignore: Don't ignore generated lahaina defconfig [Giovanni Ricca]
+f9bb12c1976e  arm64: dts: Import redwood device tree [Giovanni Ricca]
+0c655fc8d66f arm64: dts: Import zijin device tree [Giovanni Ricca]
+c58d20de4a1f arm64: dts: Use seperate mi2s rx and tx in taoyao overlay [Arian]
+bdcfbfd3ca35 arm64: dts: Import taoyao device tree [Giovanni Ricca]
+42c27b28793c arm64: dts: Import mona device tree [Giovanni Ricca]
+994ec53ada81 arm64: dts: Import lisa device tree [Giovanni Ricca]
+c39111e7004c arm64: dts: Import xiaomi-sm7325-common [Giovanni Ricca]
+647f35271e6e arm64: dts: renoir: Configure goodix config array [Arian]
+5dbd7fd3aa1d arm64: dts: Use seperate mi2s rx and tx in xiaomi sm7350 overlay [Arian]
+40af6013647d arm64: dts: Import renoir device tree [Arian]
+6b5feb9da973 arm64: dts: Import vili device tree [Giovanni Ricca]
+6324dbfa380b arm64: dts: Import odin device tree [Arian]
+69ae4b7eaedf arm64: dts: Import mars device tree [Arian]
+0d412d6fb960 arm64: dts: Import star device tree [Arian]
+74b38b5f0739 arm64: dts: Import cetus device tree [Arian]
+374d84a8c79e arm64: dts: haydn: Add ir-spi [AdarshGrewal]
+858f84ed0d30 arm64: dts: Import haydn device tree [Erfan Abdi]
+47c62558cd2d arm64: dts: venus: Add fingerprint_goodix [Giovanni Ricca]
+6a3a9c9f430c arm64: dts: venus: Add ir-spi [Giovanni Ricca]
+8c8500f1972c arm64: dts: Import venus device tree [Cosmin Tanislav]
+16222d737a6b arm64: dts: Import xiaomi-sm8350-common [Arian]
+30d614208461 arm64: dts: Correct physical panel dimensions [Arian]
+d38d7aced3da arm64: dts: yupik: Increase minimum backlight level for K9D panels [Arian]
+76cdb6c63449 arm64: dts: yupik: Import panel configurations [Giovanni Ricca]
+cfb05081e038 arm64: dts: shima: Increase minimum backlight level for K9 panels [Arian]
+fca53e187753 arm64: dts: shima: Import k9 panel configurations [Arian]
+607b6a9a4ab5 arm64: dts: lahaina: Import panel configurations [Arian]
+82541aa1d7e6 arm64: dts: pm7250b: Apply xiaomi thermal changes [Giovanni Ricca]
+cbfe50be5427 arm64: dts: pm7250b: Disable bcl_soc [Giovanni Ricca]
+387c3a943b78 arm64: dts: pm7325b: Disable bcl_soc [Giovanni Ricca]
+89cbbfa44d3d arm64: dts: yupik: Apply xiaomi pinctrl changes [Giovanni Ricca]
+68e2f0f16563 arm64: dts: yupik: Disable mi2s audio node [Giovanni Ricca]
+24cc6bf42f97 arm64: dts: yupik: Enable Primary TDM1 audio node support [Giovanni Ricca]
+daf8ad311a3f arm64: dts: yupik: Don't register eud usb port [Giovanni Ricca]
+53f703e3ed9b arm64: dts: yupik: Add PM8008I label [Giovanni Ricca]
+1e0d5f3c48ef arm64: dts: yupik: Add PM8008J label [Giovanni Ricca]
+76c29aebbb69 arm64: dts: yupik: Enable pon_pbs [Giovanni Ricca]
+cec89a73bf06 arm64: dts: yupik: Apply xiaomi thermal changes [Giovanni Ricca]
+bf7111cd7c9e arm64: dts: yupik: Enable nv-mac [Giovanni Ricca]
+0fc295a04a48 arm64: dts: yupik: Change memory regions [Giovanni Ricca]
+31f5b55b13ce arm64: dts: shima: Enable nv-mac [Arian]
+de1f6eb21216 arm64: dts: shima: Remove ramoops memory region [Arian]
+f0997a200aee arm64: dts: shima: Change memory regions [Arian]
+1aa4cc0636fe arm64: dts: shima: Increase modem temperature trips [Arian]
+fee3d1d916c7 arm64: dts: shima: Add haptics effects and F0 low rate protection properties [Arian]
+911329717f71 arm64: dts: shima: Decrease i2c pmic dropout voltage [Arian]
+603fc8ee2c09 arm64: dts: shima: Apply xiaomi thermal zone changes [Arian]
+8a7a2bd62cf3 arm64: dts: shima: Increase voltages [Arian]
+99daf680d321 arm64: dts: shima: Do not enable ldod12 and ldod13 regulators by default [Arian]
+133386da96b7 arm64: dts: shima: Increase ldod1 max regulator voltage [Arian]
+9d9933ac36f9 arm64: dts: shima: Enable input on gpio0,1 [Arian]
+2ebb0d0598c9 arm64: dts: shima: Remove non-secure display memory region [Arian]
+fb6a0c4b2c75 arm64: dts: lahaina: enable nv-mac [Arian]
+4a05e9a5ceea arm64: dts: lahaina: rename modem-lte-sub6 thermal zones [Arian]
+cc5729b01f9e arm64: dts: lahaina: increase mic bias voltage for wcd938x codec [Arian]
+5a3048cbdcf4 arm64: dts: lahaina: disable wsa master [Arian]
+e8cafdee3382 arm64: dts: lahaina: enable hw-scl-stretch-en in fast plus mode [Arian]
+c8989da49a87 arm64: dts: lahaina: add om8350c flashlight [Cosmin Tanislav]
+0f6f69f7900c arm64: dts: lahaina: add kpdpwr resin bark definition [Cosmin Tanislav]
+7ce6a1fe9d29 arm64: dts: lahaina: match bootloader memory zones [Cosmin Tanislav]
+7c568cf65c3d arm64: dts: pm8350b: Force IBB regulator into CCM mode when it gets enabled [Arian]
+d6a2efd34e26 arm64: dts: pm8350b: Apply qcom-hv-haptics changes [Arian]
+6db766885f76 arm64: dts: lahaina: add F0 low rate protection properties for qcom-hv-haptics [Arian]
+ae23f2b0e3d3 arm64: dts: lahaina: add PM8008I and PM8008J labels [Arian]
+6f65e121e5c4 arm64: dts: lahaina: remove thermal zones [Cosmin Tanislav]
+c4c8a22c5664 arm64: dts: lahaina: remove memory offline support [Cosmin Tanislav]
+11d132583d72 arm64: dts: lahaina: remove eud enable register support [Cosmin Tanislav]
+fab5cdf6a38f arm64: dts: lahaina: do not enable sdhc io regulator by default [Cosmin Tanislav]
+695b3884bc7e arm64: dts: lahaina: modify sdhc regulator voltage [Cosmin Tanislav]
+3bcb0c7d37eb arm64: dts: lahaina: enable input on gpio0,1 [Cosmin Tanislav]
+897e9cb56c77 arm64: dts: lahaina: configure gpio47 as qupv3_se10_spi_sleep_cs [Arian]
+4d06e099e47e arm64: dts: lahaina: import xiaomi gpio display changes [Cosmin Tanislav]
+120380ab6295 arm64: dts: msm-audio-lpass: apply primary audio interface changes [Arian]
+c4ce3cc34690 arm64: dts: lahaina: add tertiary audio interface [Cosmin Tanislav]
+b2af8cc55e75 arm64: dts: lahaina: remove non-secure display memory region [Cosmin Tanislav]
+34993011130d drivers: backlight: Notify userspace on brightness changes [Adithya R]
+d70682d68ff9 input: Import stmvl53l5 driver [Giovanni Ricca]
+160a97906bb0 input: misc: qcom-hv-haptics: Import xiaomi changes [Giovanni Ricca]
+84f71275c6e2 input: misc: Import Awinic AW86927 haptic driver [Giovanni Ricca]
+4b1cce0b605d input: misc: Import Awinic AW862XX haptic driver [Giovanni Ricca]
+36afe172d02b input: misc: Import Awinic AW8624 haptic driver [Giovanni Ricca]
+4473be261014 input: misc: Import Awinic AW86297 haptic driver [Giovanni Ricca]
+17fde9f43843 input: fingerprint: fpc_tee: Make vreg control mode runtime configurable [Arian]
+9b482b9a66dc input: fingerprint: fpc_tee: Disable regulator on disable [Arian]
+3b4d5d83f20a input: fingerprint: fpc_tee: Remove unnecessary gpio 121 wake setup [Arian]
+44158ee4a7d8 input: fingerprint: fpc_tee: Extend drm interface exclusions [Arian]
+6b07e9c29342 input: fingerprint: fpc_tee: Use mi display notifier [Arian]
+dcc8b34f8d1f input: fingerprint: Import psyche-r-oss fpc_tee driver [Arian]
+5195fbb52b35 input: fingerprint: Import Goodix tee driver [Giovanni Ricca]
+625340cee2f5 input: fingerprint: goodix_fod: only schedule work when drm interface not enabled [Cosmin Tanislav]
+24848396903c input: fingerprint: Import Goodix fod driver [Giovanni Ricca]
+3c0456cb8f3c input: touchscreen: Import xiaomi touch driver [Arian]
+edf7d75e0bc4 input: touchscreen: synaptics_s3908p: Omit mi_disp_set_fod_queue_work [Giovanni Ricca]
+233a828f98f2 input: touchscreen: synaptics_s3908p: Load the correct fw file [Giovanni Ricca]
+fb2b1225b526 input: touchscreen: Import Synaptics S3908P driver [Giovanni Ricca]
+ba2ba3c9ed8a input: touchscreen: Move goodix qgki config to gt9897t and gt9916 [Arian]
+a5a907204cd9 input: touchscreen: gt9897t: Don't register when TP is focal on K9 [Arian]
+a2894f0d30fb input: touchscreen: gt9897t: Set the default fw and cfg based on hw project [Arian]
+a528a5b9f352 input: touchscreen: Import Goodix 9897 driver [Arian]
+66ec38e27429 input: touchscreen: gt9916: trigger fod hbm [Ramii Ahmed]
+4739a989f416 input: touchscreen: gt9916: Omit mi_disp_set_fod_queue_work [Giovanni Ricca]
+ac0f2e8a378b input: touchscreen: gt9916: Make it load on taoyao [Giovanni Ricca]
+123e23f8f145 input: touchscreen: Import Goodix 9916 driver [Giovanni Ricca]
+18f167ef23ba input: touchscreen: Import FTS V521 Dual driver [Arian]
+2045287cd929 input: touchscreen: fts_spi: Switch to mi_disp_notifier [EcrosoftXiao]
+f8bb4cf314b2 input: touchscreen: fts_spi: trigger fod hbm [Cosmin Tanislav]
+d53134f8050b input: touchscreen: fts_spi: report FOD press based on pointer event in non-sleep mode [Cosmin Tanislav]
+0918924afc98 input: touchscreen: fts_spi: expose fod_status via sysfs [Cosmin Tanislav]
+bee2406961f0 input: touchscreen: fts_spi: introduce fts mode handler worker [Cosmin Tanislav]
+756751a575ae input: touchscreen: fts_spi: Omit mi_disp_set_fod_queue_work [Giovanni Ricca]
+35b41ce4fbd9 input: touchscreen: fts_spi: Sync with updated xiaomi-touch driver [Giovanni Ricca]
+1dcdfc9549eb input: touchscreen: Import FTS V521 driver [Arian]
+c6921f2233a4 input: touchscreen: focaltech_3680: Omit mi_disp_set_fod_queue_work [Giovanni Ricca]
+02b63832012c input: touchscreen: Import Focaltech 3680 driver [Giovanni Ricca]
+
+* vendor/extra
+06bfeba extra: build: Drop already merged patches [Giovanni Ricca]
+
+====================
+     2023-03-25    
+====================
+* device/xiaomi/sm8350-common
+2bbe2fa sm8350-common: hidl: Add cameraperf to framework compatibility matrix [Arian]
+648eec7 sm8350-common: sepolicy: Add camera perf and postproc hwservice [Arian]
+825cef9 sm8350-common: Switch to camera.xiaomi.so [Arian]
+55384c6 sm8350-common: Import public.libraries.txt from haydn V14.0.3.0.TKKMIXM [Arian]
+
+* hardware/qcom-caf/msm8953/display
+a64efb5 gralloc: Fix Compilation errors [Vinoth Jayaram]
+
+* hardware/qcom-caf/msm8996/display
+1df14a7 gralloc: Fix Compilation errors [Vinoth Jayaram]
+
+* hardware/qcom-caf/msm8998/display
+13a4965 gralloc: Fix Compilation errors [Vinoth Jayaram]
+
+* hardware/qcom-caf/sdm845/display
+bf38af8 gralloc: Fix Compilation errors [Vinoth Jayaram]
+
+* hardware/qcom-caf/sm8150/display
+7f1207d gralloc: Fix Compilation errors [Vinoth Jayaram]
+
+* hardware/qcom-caf/wlan
+7923640 fixup! wpa_supplicant_8_lib: Add support for TSF command and attributes. [Bruno Martins]
+
+* hardware/qcom/sdm845/display
+e048fed gralloc: Fix Compilation errors [Vinoth Jayaram]
+
+* hardware/qcom/sm7250/display
+4a774c4 gralloc: Fix Compilation errors [Vinoth Jayaram]
+
+* hardware/qcom/sm8150/display
+dbc6718 gralloc: Fix Compilation errors [Vinoth Jayaram]
+
+* packages/overlays/Lineage
+6958fdb overlays: IconPack: Rename config_signalXPath [Adithya R]
+
+====================
+     2023-03-24    
+====================
+* device/qcom/sepolicy
+2bcf130 Merge tag 'LA.QSSI.13.0.r1-09400-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-09400-qssi.0 [Michael Bestas]
+
+* device/qcom/sepolicy-legacy-um
+eca848c Merge tag 'LA.UM.11.2.1.r1-03300-sdm660.0' into staging/lineage-20.0_merge-LA.UM.11.2.1.r1-03300-sdm660.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr
+cbfe921 Merge tag 'LA.VENDOR.1.0.r1-20700-WAIPIO.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-20700-WAIPIO.0 [Michael Bestas]
+
+* frameworks/base
+f0a3206c Apply monet to fingerprint authentication ripple animation [SagarMakhar]
+
+* hardware/qcom-caf/sdm660/audio
+f65c667 Merge tag 'LA.UM.11.2.1.r1-03300-sdm660.0' into staging/lineage-20.0_merge-LA.UM.11.2.1.r1-03300-sdm660.0 [Michael Bestas]
+
+* hardware/qcom-caf/sdm660/display
+fa479d0 Merge tag 'LA.UM.11.2.1.r1-03300-sdm660.0' into staging/lineage-20.0_merge-LA.UM.11.2.1.r1-03300-sdm660.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8250/media
+0242c27 Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.12.r1-15200-SMxx50.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8350/audio
+54fde3d Merge tag 'LA.UM.9.14.r1-21200-LAHAINA.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-21200-LAHAINA.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/thermal
+6a6e46f Merge tag 'LA.VENDOR.1.0.r1-20700-WAIPIO.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-20700-WAIPIO.0 [Michael Bestas]
+
+* lineage-sdk
+8eb16e5 Automatic translation import [Michael Bestas]
+
+* packages/apps/Backgrounds
+0dc1e51 Automatic translation import [Michael Bestas]
+
+* packages/apps/Camera2
+930eb89 Automatic translation import [Michael Bestas]
+
+* packages/apps/DeskClock
+b2d7e27 Automatic translation import [Michael Bestas]
+
+* packages/apps/Dialer
+cb85765 Automatic translation import [Michael Bestas]
+
+* packages/apps/DocumentsUI
+9266bb7 Automatic translation import [Michael Bestas]
+
+* packages/apps/Etar
+9c02b46 Automatic translation import [Michael Bestas]
+
+* packages/apps/FlipFlap
+a83f2a0 Automatic translation import [Michael Bestas]
+
+* packages/apps/Jelly
+e91ead6 Automatic translation import [Michael Bestas]
+
+* packages/apps/LineageParts
+06765db Automatic translation import [Michael Bestas]
+
+* packages/apps/Recorder
+5b1b693 Automatic translation import [Michael Bestas]
+
+* packages/apps/Settings
+0fe6935 Revert "Bring back font and icon shape customization" [SamarV-121]
+
+* packages/apps/SetupWizard
+78b01d5 Automatic translation import [Michael Bestas]
+
+* packages/apps/ThemePicker
+a546ebb ThemePicker: Show our apps in icon previews [Demon000]
+
+* packages/apps/Updater
+e83f74a Automatic translation import [Michael Bestas]
+
+* packages/inputmethods/LatinIME
+b7aee51 Fix spellcheck on sentence end [icburns]
+
+* packages/resources/devicesettings
+146952e Automatic translation import [Michael Bestas]
+
+* vendor/qcom/opensource/audio-hal/st-hal
+a07bc5f Merge tag 'LA.UM.9.14.r1-21200-LAHAINA.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-21200-LAHAINA.QSSI13.0 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys-intf/display
+2493524 Merge tag 'LA.QSSI.13.0.r1-09400-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-09400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
+bb0df39 Merge tag 'LA.UM.9.14.r1-21200-LAHAINA.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-21200-LAHAINA.QSSI13.0 [Michael Bestas]
+
+* vendor/qcom/opensource/fm-commonsys
+775cfd9 Merge tag 'LA.QSSI.13.0.r1-09400-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-09400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/interfaces
+4ca4338 Merge tag 'LA.QSSI.13.0.r1-09400-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-09400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/power
+adbcfe8 Merge tag 'LA.VENDOR.1.0.r1-20700-WAIPIO.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-20700-WAIPIO.0 [Michael Bestas]
+
+* vendor/qcom/opensource/usb
+b89a8fa Merge tag 'LA.VENDOR.1.0.r1-20700-WAIPIO.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-20700-WAIPIO.0 [Michael Bestas]
+
+====================
+     2023-03-23    
+====================
+* frameworks/native
+94dd1b1 inputflinger: allow disabling input devices via idc [Billy Laws]
+
+* lineage/crowdin
+de63b5e config: lineage-20.0: Add ThemesStub [Michael Bestas]
+
+* vendor/extra/tools/releases/LineageOS_ysl
+46442ed LineageOS_ysl: lineage-20: 20230322 [Giovanni Ricca]
+
