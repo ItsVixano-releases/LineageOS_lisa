@@ -1,0 +1,173 @@
+====================
+     2023-04-17    
+====================
+* build/soong
+d10bd81 Disable clang-tidy [Danny Lin]
+2dc587b cleanbuild: Remove obj/{DTB,DTBO,KERNEL}_OBJ on installclean [Jason Edson]
+2584972 ui: Pass the exact CPU thread count to -j [Park Ju Hyung]
+8254b4d soong: increase heap size for metalava [LeddaZ]
+
+* device/xiaomi/sm8350-common
+18af547 sm8350-common: Update display blobs from Sony Xperia 1 III (XQ-BC72) 61.2.A.0.410 [Arian]
+cb5c72c sm8350-common: Update display HDR blobs from tundra S3SJS32.1-86-1-4 [Arian]
+cb86ec2 sm8350-common: Restructure display blobs sections [Arian]
+e86ecfd sm8350-common: Unset DEXPREOPT_GENERATE_APEX_IMAGE [Bruno Martins]
+07b6eb7 sm8350-common: Move to common sensors multihal [Arian]
+88fdfc3 sm8350-common: sepolicy: Remove duplicate lahaina wakeup nodes [Bruno Martins]
+2a641ef sm8350-common: sepolicy: Label camera libraries as same process hal files [Arian]
+6766cd9 sm8350-common: Build graphics allocator 3.0 interface to vendor [Arian]
+749023b sm8350-common: hidl: Add cameraperf to framework compatibility matrix [Arian]
+08a574b sm8350-common: sepolicy: Add camera perf and postproc hwservice [Arian]
+b201a74 sm8350-common: Switch to camera.xiaomi.so [Arian]
+f9363b1 sm8350-common: Import public.libraries.txt from haydn V14.0.3.0.TKKMIXM [Arian]
+794542b sm8350-common: sepolicy: Set sensor HAL as a client of audio HAL [Chenyang Zhong]
+564e70f sm8350-common: Build 64-bit audio HIDL as well [Chenyang Zhong]
+69c4557 sm8350-common: Decommonize camera blob fixups [Arian]
+1ee719b sm8350-common: Drop custom APM flag along with no-op audio flags [Bruno Martins]
+0dcd3f3 sm8350-common: Sort blobs list /w sort-blobs-list.py [LuK1337]
+dcfd80b sm8350-common: media: Sync media configs from haydn V14.0.3.0.TKKMIXM [Giovanni Ricca]
+6c44bff sm8350-common: rootdir: Sync rootdir from haydn V14.0.3.0.TKKMIXM [Giovanni Ricca]
+cb4f032 sm8350-common: wifi: Disable Target Wake Time [Giovanni Ricca]
+ce5bf61 sm8350-common: Patch ims.apk [Arian]
+7f3d4cc sm8350-common: Update from haydn V14.0.3.0.TKKMIXM [AdarshGrewal]
+f3e0c86 sm8350-common: sepolicy: Label more wakeup nodes [AdarshGrewal]
+4c87687 sm8350-common: configs: Add camera-daemon hint [Giovanni Ricca]
+9ab4694 sm8350-common: Remove frozen and unfrozen cgroup [Kishor Krishna Bhat]
+bb8438e sm8350-common: Add UClamp support for lahaina [Satya Durga Srinivasu Prabhala]
+da882c6 sm8350-common: Enable zygote critical window [Woody Lin]
+fa14a03 sm8350-common: Enable set channel on NDP setup [Nate Jiang]
+2642071 sm8350-common: wifi: Configure correct overlay configuration. [Les Lee]
+678df67 sm8350-common: Drop config_setColorTransformAccelerated [Georg Veichtlbauer]
+88d8ff6 sm8350-common: overlay: Update multiple vibration strength levels overlay for 13 [Michael Bestas]
+bc2fe83 sm8350-common: QCOM healthd is globally tracked now [Nolen Johnson]
+886c8c2 sm8350-common: gps: Fix -Wbitwise-instead-of-logical [Pirama Arumuga Nainar]
+
+* frameworks/av
+5f48aca SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+c11d03fa Camera: Expose aux camera if packagename is null [wbs306]
+70be227c SystemUI: Add delete action to screen recorder notification [Sourajit Karmakar]
+c45c05d3 Revert "Update Media Seekbar Thumb Shape" [00day0]
+d55ee342 core: Remove default aspect ratio limit for old apps [Danny Lin]
+200af2c2 Add support for app signature spoofing [Danny Lin]
+267fc108 AuthRippleView: Allow disabling ripple unlock animation using overlay [jhenrique09]
+a2912f06 base: SystemUI: Allow flags to be overrideable [Jeferson]
+7b9fe268 Revert "Ignore the charging ripple flag." [Jeferson]
+ac20891e Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* hardware/interfaces
+cc5e90d frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
+
+* hardware/qcom-caf/sm8350/display
+3d8b7a7 gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
+
+* kernel/xiaomi/sm8350
+70e52906f0ea TMP [Giovanni Ricca]
+b92749d7e4a2 Merge remote-tracking branch 'sm8350/lineage-20' into lineage-20 [Giovanni Ricca]
+
+* lineage/mirror
+42d9c95 Updated to 16-Apr-2023 16:26 UTC [Kevin F. Haggerty]
+
+* packages/apps/Trebuchet
+feca97f Launcher3: power-off -> screen-off [kubersharma001]
+8157e78 Launcher3: Show clear all button in recents overview [jhonboy121]
+582d8ed Launcher3: Add toggle for DT2S [DennySPB]
+2c31bc1 Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
+
+* packages/apps/Updater
+2602268 Updater: add support for local updates [Joey]
+
+* packages/modules/Permission
+0205a05 Utils: add FAKE_PACKAGE_SIGNATURE to platform permissions [Vachounet]
+
+* vendor/lineage
+4d99166 vars: April 2023 Security update [Michael Bestas]
+
+* vendor/xiaomi/sm8350-common
+f5adf88 sm8350-common: Update display blobs from Sony Xperia 1 III (XQ-BC72) 61.2.A.0.410 [Arian]
+
+====================
+     2023-04-16    
+====================
+* device/qcom/sepolicy_vndr-legacy-um
+e52af6e bengal: Correct sysfs_wakeup paths [Michael Bestas]
+
+====================
+     2023-04-15    
+====================
+* lineage/charter
+4d4be1c exemptions: Android 13 FDE exemption for custom keymaster implementations [Nolen Johnson]
+
+====================
+     2023-04-14    
+====================
+* android
+8d68725 Move Trebuchet to default.xml [Michael Bestas]
+
+* hardware/xiaomi
+3d94659 hidl: sensors: 1.0: Standardize xiaomi pickup sensor [Cosmin Tanislav]
+
+* lineage/hudson
+ff029fd The XDA phone finally lives [Nolen Johnson]
+
+* lineage/wiki
+6ffecd2 devices: Add F(x)tec Pro^1 X [Nolen Johnson]
+
+* packages/apps/SetupWizard
+f85129e FinishActivity: prevent jumping layout when finishing [Alexander Martinz]
+
+* packages/apps/Updater
+bfbc440 Updater: Show the correct percentage during package installation [Tommaso Fonda]
+
+====================
+     2023-04-13    
+====================
+====================
+     2023-04-12    
+====================
+* hardware/qcom-caf/wlan
+79ccbda wcnss-service: Remove setup_wlan_driver_ath_prop() [Michael Bestas]
+
+====================
+     2023-04-11    
+====================
+* build/make
+e02d086 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* frameworks/av
+1fea281 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* frameworks/native
+b3dfccb Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* hardware/google/pixel
+5b75a7d Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* lineage/scripts
+cc6f2a9 build-webview: Update default webview to 112.0.5615.48 [Kevin F. Haggerty]
+
+* packages/apps/Aperture
+a5741ab Aperture: Add toggle for FFC horizontal flip [LuK1337]
+
+* packages/apps/Settings
+ca256cd Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* packages/apps/Trebuchet
+1ec394d Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* packages/modules/Bluetooth
+765595a Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* packages/modules/Wifi
+b7ca966 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* packages/providers/MediaProvider
+1cde084 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* packages/services/Telecomm
+e585f26 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
+* system/sepolicy
+3e8f36f Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
+
