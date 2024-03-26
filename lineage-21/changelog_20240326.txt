@@ -1,0 +1,327 @@
+====================
+     2024-03-26    
+====================
+* art
+2250447 art: Disable debug tracing on production builds [Danny Lin]
+
+* build/make
+fc9525e Always use release-keys for ro.build.tags [Danny Lin]
+9493e54 releasetools: Resolve symlinks in IsEntryOtaPackage() [LuK1337]
+
+* build/soong
+f8e27e1 use speed compiler filter for dexpreopt by default [Daniel Micay]
+7933645 cleanbuild: Remove obj/{DTB,DTBO,KERNEL}_OBJ on installclean [Jason Edson]
+31d8957 ui: Pass the exact CPU thread count to -j [Park Ju Hyung]
+2780497 soong: Specify heap size for metalava for S+ [Michael W]
+cc1c051 soong: increase heap size for metalava [LeddaZ]
+
+* device/lineage/atv
+3d3e87e Copy Steam Controller layouts for ble and wireless [Aaron Kling]
+
+* device/mediatek/sepolicy_vndr
+d2d073c basic: non_plat: Label MediaTek USB Gadget HAL [bengris32]
+
+* device/xiaomi/sm6250-common
+3e7a90f sm6250-common: Set arch variant to armv8-2a-dotprod [Adithya R]
+ea04f38 sm6250-common: Define boot image security patch [Alexander Koskovich]
+bf1adc3 sm6250-common: Set VENDOR_SECURITY_PATCH to platform [Chris Fries]
+
+* device/xiaomi/sm8350-common
+ce5d6b8 sm8350-common: Set arch variant to armv8-2a-dotprod [Adithya R]
+b3b79b8 sm8350-common: Define boot image security patch [Alexander Koskovich]
+7902182 sm8350-common: Set VENDOR_SECURITY_PATCH to platform [Chris Fries]
+f56651e sm8350-common: Don't copy camera config [Giovanni Ricca]
+
+* external/jemalloc_new
+0cf45bc Add compile option to speed up code. [Christopher Ferris]
+0668da3 Use ELF TLS [Danny Lin]
+8187e24 Enable usage of MADV_FREE [Danny Lin]
+3872c5e android: Disable malloc_iterate [Danny Lin]
+78c671b jemalloc: always assume overcommitting memory [Park Ju Hyung]
+f245219 JEMALLOC_THP -> JEMALLOC_HAVE_MADVISE_HUGE [Alexander Winkowski]
+
+* frameworks/av
+55c8048006 Codec2: Extend the queue empty work hack to MTK decoders too [bengris32]
+5f431141f6 libcameraservice: Use the correct vendor tag id type on filterParameters [danielml]
+
+* frameworks/base
+68caf816a core: PinSet: Fixup and improve algorithms caching [jhonboy121]
+4dc3c9d5b Cache pin algorithms in PinSet [Till Kottmann]
+2aff1a965 Cache KeyStoreService [Till Kottmann]
+783015cd6 (Point) Only calculate sin and cos once [Till Kottmann]
+c031649fc LayoutInflater: Opportunistically create views directly for performance [Danny Lin]
+97e48fbf4 SystemServiceRegistry: Replace ArrayMap with HashMap for performance [Danny Lin]
+ea4d7d347 LocalServices: Replace ArrayMap with HashMap for performance [Danny Lin]
+da53942e1 ThemedResourceCache: Replace ArrayMap with HashMap for performance [Danny Lin]
+ea61405fe Trace: Disable debug tracing on production builds [Danny Lin]
+e29b481f2 Revert "Pre-emptively take a snapshot when finishing an activity before changing visibility" [Danny Lin]
+53094c7cf Revert "Revert "Update light/dark detection."" [Alexander Winkowski]
+6da737bb2 Revert "Enable color threshold editing via SystemProperties" [Alexander Winkowski]
+ca305bae3 hwui: Compile without no-omit-frame-pointer [Sourajit Karmakar]
+3c804218e libhwui: compile for performance [Vaisakh Murali]
+7adc9b9fc libhwui: enable O3 when compiling for perf [Vaisakh Murali]
+d67e96913 libhwui: remove deprecated perf flags [Vaisakh Murali]
+375e7ef0d SystemUI: Remove Android build number from QS footer [Danny Lin]
+f3c8202c2 SystemUI: Reduce screenshot dismiss delay to 3 seconds [Danny Lin]
+6cca67949 core: Remove old app target SDK dialog [Danny Lin]
+cf0d5b1c5 core: Remove default aspect ratio limit for old apps [Danny Lin]
+80e760083 AuthRippleView: Allow disabling ripple unlock animation using overlay [jhenrique09]
+e61ff0c70 base: SystemUI: Allow flags to be overrideable [Jeferson]
+041bfc171 Revert "Ignore the charging ripple flag." [Jeferson]
+ae0d55cd1 Revert "Update Media Seekbar Thumb Shape" [00day0]
+3726cbe7a Screenrecord: Dismiss notification on stop [Lostark13]
+7537a2f37 Screenrecord: Remember last used blinking dot position [Ido Ben-Hur]
+8c444f734 Screenrecord: Save preferences for permission dialog [Pranav Vashi]
+b5d6e81c5 Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
+54fcbfb4c Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
+ca4998671 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
+75b1a6922 Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
+8a009de96 Screenrecord: Save and load set preferences [Ido Ben-Hur]
+0635adec0 Screenrecord: add blinking stop dot and low quality options [ezio84]
+63004aafa Screenrecord: Allow to select AVC codec profile level [iusmac]
+078502fc0 Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
+ef39a5164 fixup! SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Anay Wadhera]
+
+* frameworks/native
+3714c0e60f libbinder: Suppress log spam when unlinking death recipients [Danny Lin]
+
+* hardware/mediatek
+90e0ed0 libwifi-hal-wrapper: Initial wrapper for legacy vendor HALs [bengris32]
+
+* hardware/qcom-caf/sm8150/audio
+e6db9bb audio_amplifier: Change the enable amplifier function location [Luofan Chen]
+
+* kernel/xiaomi/mt6895
+98e9fd983fa7 ARM64: configs: gki_defconfig: Build with ThinLTO [Giovanni Ricca]
+
+* lineage/crowdin
+59213c2 config: lineage-21.0_aosp: Update for QPR2 [Michael Bestas]
+
+* packages/apps/Trebuchet
+4ab395d Increase blur radius [Alexander Winkowski]
+f160d78 DepthController: Change blur radius to dimension resource [Danny Lin]
+08dfff4 Disable blur on app launch [Alexander Winkowski]
+e0bb392 Make scrim transparent [Alexander Winkowski]
+16a2950 Trebuchet: Move clear all button to actions view [Vachounet]
+f9e5de6 Launcher3: Add toggle for DT2S [DennySPB]
+85fd54c Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
+
+* packages/inputmethods/LatinIME
+349ee2a LatinIME: fix gesture typing [johnny]
+504daee Revert "LatinIME: Add fallback loader for JNI lib" [nift4]
+
+* system/core
+e2e431470 init: Report valid verified boot for SafetyNet checks [Danny Lin]
+
+* vendor/crowdin
+764cc98 Move translations for QPR2 [Michael Bestas]
+
+* vendor/extra/priv
+6efea7f patches: lineage-21: QPR2 updates [Giovanni Ricca]
+cbd2a2d priv: Initial squashed repo [Giovanni Ricca]
+
+* vendor/lineage
+105b86ee lineage: products: sdk_phone_x86_64 emulator - restore partition sizes [mse1969]
+
+* vendor/qcom/opensource/libfmjni
+7f19ca2 libfmjni: Don't call `pthread_join` on `Pwr_down` [Giovanni Ricca]
+14468bc libfmjni: Fix RDS info retrieving [iusmac]
+
+====================
+     2024-03-25    
+====================
+* device/xiaomi/mt6895-common
+b0c326c mt6895-common: Make `secure_element` overridable [Giovanni Ricca]
+
+* device/xiaomi/xaga
+94800bb [DNM] xaga: Prebuilt dtbo V14.0.8.0.TLOMIXM [Giovanni Ricca]
+
+* frameworks/base
+fabbde227 fixup! SystemUI: Implement hide gestural navigation hint bar [Dhina17]
+
+* lineage/wiki
+d278bb0 emulator: Android 14 does not support the sdk_phone_x86 target any longer [mse1969]
+
+* packages/apps/LineageParts
+689d081 LineageParts: Migrate MainSwitchBar and Switch to Material3 [Bruno Martins]
+
+* packages/apps/Settings
+1e38076 fixup! Settings: Show single-touch wakeup setting on rear & front fps devices [Michael Bestas]
+ba302d7 fixup! Hide SFPS wakeup setting when it's not supported [Michael Bestas]
+
+* packages/apps/TvSettings
+842eb12 TvSettings: Move power related options to "Power and Energy" [Bruno Martins]
+
+* packages/resources/devicesettings
+17f73bb DeviceSettings: Migrate MainSwitchBar and Switch to Material3 [Bruno Martins]
+
+* vendor/extra/tools/releases/LineageOS_miatoll
+adf8891 LineageOS_miatoll: lineage-21: 20240324 [Giovanni Ricca]
+
+* vendor/extra/tools/releases/LineageOS_xaga
+6dc776b LineageOS_xaga: lineage-21: 20240324 [Giovanni Ricca]
+
+====================
+     2024-03-24    
+====================
+* bootable/recovery
+b78bf1f3 fixup! recovery_utils: add support for unmounting entire volumes [LuK1337]
+
+* device/xiaomi/miatoll
+c0c0603 miatoll: Copy NFC firmware to the correct location [Alexander Winkowski]
+40b41ea Revert "miatoll: nfc: Update storage path to /data/vendor/nfc" [Giovanni Ricca]
+
+* device/xiaomi/msm8953-common
+da208fa msm8953-common: Don't explicitly include updatable_apex.mk [basamaryan]
+
+* device/xiaomi/sm6250-common
+9ab83d2 sm6250-common: Don't explicitly include updatable_apex.mk [basamaryan]
+
+* device/xiaomi/sm8350-common
+ccf483a sm8350-common: Don't explicitly include updatable_apex.mk [basamaryan]
+
+* packages/modules/Bluetooth
+e40e2bb [ALPS08619561] Add VSC Cmd for Mediatek chip [weifan.zhang]
+
+* vendor/extra
+a72dd7b vendorsetup: Setup beta build [Giovanni Ricca]
+
+* vendor/extra/tools/releases/LineageOS_daisy
+7a06e64 LineageOS_daisy: lineage-21: 20240324 [Giovanni Ricca]
+
+* vendor/extra/tools/releases/LineageOS_sakura
+a57b164 LineageOS_sakura: lineage-21: 20240324 [Giovanni Ricca]
+
+* vendor/extra/tools/releases/LineageOS_ysl
+c9eb1d4 LineageOS_ysl: lineage-21: 20240324 [Giovanni Ricca]
+
+* vendor/xiaomi/miatoll
+8b0701a miatoll: Copy NFC firmware to the correct location [Alexander Winkowski]
+
+====================
+     2024-03-23    
+====================
+* frameworks/opt/telephony
+1655631 PhoneSwitcher: Fallback to HAL_COMMAND_ALLOW_DATA when DDS switch fails [LuK1337]
+
+* hardware/interfaces
+a8d6277 Revert "compatibility_matrices: Allow radio.config@1.0 till target-level 5" [Yumi Yukimura]
+
+* hardware/lineage/interfaces
+7f5f189 gnss: Remove legacy passthrough HAL [Bruno Martins]
+
+* hardware/st/nfc
+0b01835 Add support to read different fw configs for ssss/dsds [Michael Bestas]
+
+* kernel/xiaomi/sm6250
+5108742190d7 BACKPORT: bpf: Use char in prog and map name [Martin KaFai Lau]
+9dbf7dfa6666 bpf: Change bpf_obj_name_cpy() to better ensure map's name is init by 0 [Martin KaFai Lau]
+32ff563652dd BACKPORT: bpf: Add map_name to bpf_map_info [Martin KaFai Lau]
+6a2220cf0b50 BACKPORT: bpf: Add name, load_time, uid and map_ids to bpf_prog_info [Martin KaFai Lau]
+
+* packages/apps/FlipFlap
+c9c0701 FlipFlap: Migrate to CompoundButton.OnCheckedChangeListener [Chaohui Wang]
+
+* packages/apps/Settings
+3492261 fixup! DynamicDenylistManager shall not exist [Michael Bestas]
+
+* packages/apps/ThemePicker
+4a3bd3c fixup! ThemePicker: Bring back fonts, icon pack, shape customization [Michael Bestas]
+
+* vendor/extra
+d56864c patches: lineage-21: Update for QPR2 [Giovanni Ricca]
+65e845d vendorsetup: Fix breakfast [Michael Bestas]
+
+* vendor/firmware
+50223a2 xaga: Update firmware to V14.0.7.0.TKOMIXM [Giovanni Ricca]
+
+* vendor/xiaomi/xaga
+e787a0e xaga: Sync with tree [Giovanni Ricca]
+
+====================
+     2024-03-22    
+====================
+* device/qcom/sepolicy-legacy-um
+a55fc3c legacy: Allow USB HAL get vendor_usb_prop [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/legacy-um
+b718e9c sepolicy_vndr: Allow USB HAL get vendor_usb_prop [Michael Bestas]
+
+* device/xiaomi/msm8953-common
+c217763 msm8953-common: Uprev usb hal to 1.3 [Aaron Kling]
+da8fd9e msm8953-common: Remove deprecated trust HAL [Bruno Martins]
+e9c0b20 Revert "msm8953-common: Switch to legacy WiFi HIDL HAL" [Yumi Yukimura]
+f42f488 msm8953-common: parts: Migrate to CompoundButton.OnCheckedChangeListener [Chaohui Wang]
+a22a3cb msm8953-common: parts: Enable use_resource_processor for all sysui deps [Peter Kalauskas]
+143f7d6 msm8953-common: gps: Don't include cutils/threads.h [Tomasz Wasilczyk]
+eb47db6 msm8953-common: Add BUILD_BROKEN_INCORRECT_PARTITION_IMAGES [Cole Faust]
+
+* device/xiaomi/sm6250-common
+567c7df sm6250-common: Switch to android.hardware.usb@1.3-service.dual_role_usb [Michael Bestas]
+2259f01 sm6250-common: gps: Don't include cutils/threads.h [Tomasz Wasilczyk]
+818dc97 sm6250-common: Add BUILD_BROKEN_INCORRECT_PARTITION_IMAGES [Cole Faust]
+
+* device/xiaomi/sm8350-common
+2a31773 sm8350-common: gps: Don't include cutils/threads.h [Tomasz Wasilczyk]
+9b40050 sm8350-common: Add BUILD_BROKEN_INCORRECT_PARTITION_IMAGES [Cole Faust]
+
+* hardware/qcom-caf/sm8450/audio/agm
+3a330a7 agm: plugins: Fix incompatible function pointer type error [LuK1337]
+
+* hardware/xiaomi
+edd818c hidl: biometrics: Add support for chipone fingerprint [Matsvei Niaverau]
+
+* packages/apps/Aperture
+890504a Aperture: Allow background launch for QR code pending intents [Luca Stefani]
+
+====================
+     2024-03-21    
+====================
+* build/soong
+883519c soong: paths: Fix out of tree $OUT [Cosmin Tanislav]
+
+* device/lineage/sepolicy
+754e48e common: Changes for android.hardware.usb@1.3-service.dual_role_usb HAL [Michael Bestas]
+
+* frameworks/av
+c8123dc472 fixup! Camera: Skip stream size check for whitelisted apps [Nick Reuter]
+
+* hardware/qcom-caf/sm8550/audio/agm
+25a4dee agm: plugins: Fix incompatible function pointer type error [LuK1337]
+
+* lineage-sdk
+dcbd8de Drop support for legacy USB restrictor [Chirayu Desai]
+
+* lineage/hudson
+b69e939 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+e916189 Updated lineage-minimal to 21-Mar-2024 13:02 UTC [Tim Schumacher]
+
+* packages/apps/Dialer
+28f3ce5 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas]
+
+* packages/apps/Jelly
+564b570 Jelly: Bump compile and target SDK version to 34 [LuK1337]
+
+* packages/apps/SetupWizard
+79e9f1c Fix QPR2 build [Michael Bestas]
+
+* system/sepolicy
+1d6643355 sepolicy: allow fastbootd to operate devpts [Randall Huang]
+
+====================
+     2024-03-20    
+====================
+* hardware/lineage/compat
+1522a47 compat: Drop libprotobuf-cpp-lite-3.9.1-vendorcompat [basamaryan]
+
+* packages/modules/Connectivity
+0c2456a Remove sdk level check when calling getDataSaverEnabled [Junyu Lai]
+
+* system/bpf
+dd436e6 bpfloader: Support <4.14 kernels [Michael Bestas]
+
+* tools/extract-utils
+045c650 extract-utils: Support declaring symlinks to source files [SamarV-121]
+
