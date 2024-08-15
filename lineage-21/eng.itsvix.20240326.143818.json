@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1721045781,
-      "filename": "lineage-21.0-20240715-UNOFFICIAL-lisa.zip",
-      "id": "7fd38d90aab24beeb6c922e445ce8546",
+      "datetime": 1723715784,
+      "filename": "lineage-21.0-20240815-UNOFFICIAL-lisa.zip",
+      "id": "6abc1c21214c0190d7f3aa007d08bcf0",
       "romtype": "unofficial",
-      "size": 1536524458,
-      "url": "https://github.com/ItsVixano-releases/LineageOS_lisa/releases/download/20240715/lineage-21.0-20240715-UNOFFICIAL-lisa.zip",
+      "size": 1530553541,
+      "url": "https://github.com/ItsVixano-releases/LineageOS_lisa/releases/download/20240815/lineage-21.0-20240815-UNOFFICIAL-lisa.zip",
       "version": "21.0"
     }
   ]
