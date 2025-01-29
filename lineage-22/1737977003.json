@@ -1,3 +1,13 @@
 {
-  "response": []
+  "response": [
+    {
+      "datetime": 1738144863,
+      "filename": "lineage-22.1-20250129-UNOFFICIAL-lisa.zip",
+      "id": "60a162f582c5fde4cd33d01ce379b4f74f4da2296dfebecd120095d89431b135",
+      "romtype": "unofficial",
+      "size": 1407226403,
+      "url": "https://github.com/ItsVixano-releases/LineageOS_lisa/releases/download/20250129/lineage-22.1-20250129-UNOFFICIAL-lisa.zip",
+      "version": "22.1"
+    }
+  ]
 }
